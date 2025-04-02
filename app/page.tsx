@@ -42,7 +42,7 @@ export default function Home() {
           playsInline
           aria-hidden="true"
         >
-          <source src="/videos/m2-res_1080p.mp4" type="video/mp4" />
+          <source src="/videos/car_video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
