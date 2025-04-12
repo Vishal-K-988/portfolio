@@ -7,27 +7,37 @@ import Image from "next/image"
 export default function Projects() {
   const projects = [
     {
-      title: "Project One",
-      description: "A full-stack application built with Next.js and Tailwind CSS.",
-      image: "/placeholder.svg?height=400&width=600",
-      tags: ["Next.js", "React", "Tailwind CSS"],
+      title: "Portfolio",
+      description: "Personalized portfolio website showcasing my projects and skills. Built with Next.js and Tailwind CSS.",
+
+      image: "/portfolio.png?height=200&width=100",
+
+      tags: ["Next.js", "React", "Tailwind CSS", "Framer Motion" , "luicide-react"],
+      github: "https://github.com/Vishal-K-988/portfolio", 
+      demo: "https://www.vishalkumargeed.in/",
+    },
+    {
+      title: "ProtoChain",
+      description: "AI-powered platform that simplifies the generation and deployment of smart contracts across multiple blockchain networks. ",
+      image: "/ProtoChain.png?height=300&width=600",
+      tags: ["React", "Web3", "Gemini" , "Rust" , "Tailwind CSS" , "Petra Wallet"],
+      github: "https://github.com/Vishal-K-988/ProtoChain",
+      demo: "#",
+    },
+    {
+      title: "SAAS AI powered Presentation Generator [Working]",
+      description: "AI-powered presentation generator that creates slides based on user input.",
+      image: "/Presentation.png?height=400&width=600",
+      tags: ["Clerk"  ,"Neon" , "Uploadcare" , "Stripe"],
       github: "#",
       demo: "#",
     },
     {
-      title: "Project Two",
-      description: "An e-commerce platform with payment integration and user authentication.",
-      image: "/placeholder.svg?height=400&width=600",
-      tags: ["React", "Node.js", "MongoDB"],
-      github: "#",
-      demo: "#",
-    },
-    {
-      title: "Project Three",
-      description: "A mobile-responsive dashboard with data visualization.",
-      image: "/placeholder.svg?height=400&width=600",
-      tags: ["TypeScript", "Chart.js", "Firebase"],
-      github: "#",
+      title: "Image Processing Using Serveless Cloud",
+      description: "Image processing application using serverless cloud functions for fast and efficient image manipulation.",
+      image: "/Serverless.png?height=400&width=600",
+      tags: ["AWS"  ,"PIL" , "AWS- Lambda" , "React" , "API"],
+      github: "https://github.com/Vishal-K-988/Image-processing-using-serverless-Cloud-",
       demo: "#",
     },
   ]

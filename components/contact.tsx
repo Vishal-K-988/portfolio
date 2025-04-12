@@ -4,7 +4,7 @@ import type React from "react"
 
 import { useState } from "react"
 import { motion } from "framer-motion"
-import { Mail, Phone, MapPin, Send } from "lucide-react"
+import { Mail, Phone, MapPin, Send , Twitter , Linkedin, Github  } from "lucide-react"
 
 export default function Contact() {
   const [formState, setFormState] = useState({
@@ -22,11 +22,8 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle form submission here
     console.log(formState)
-    // Reset form
     setFormState({ name: "", email: "", message: "" })
-    // Show success message
     alert("Message sent successfully!")
   }
 
@@ -64,33 +61,54 @@ export default function Contact() {
         >
           <div className="flex items-center space-x-3">
             <Mail className="h-5 w-5 text-primary" />
-            <span>email@example.com</span>
+            <span>vishalkumargeed@gmail.com</span>
           </div>
-          <div className="flex items-center space-x-3">
-            <Phone className="h-5 w-5 text-primary" />
-            <span>+1 (123) 456-7890</span>
-          </div>
+          
           <div className="flex items-center space-x-3">
             <MapPin className="h-5 w-5 text-primary" />
-            <span>New York, NY</span>
+            <span>Bhopal, India</span>
           </div>
 
           <div className="pt-4">
             <h3 className="text-lg font-medium mb-3">Connect with me</h3>
             <div className="flex space-x-4">
-              {/* Social media icons would go here */}
+
+
+
               <div className="h-10 w-10 rounded-full bg-muted flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors cursor-pointer">
+
+                <a href="https://x.com/vishalllism" target="_blank" rel="noopener noreferrer">
                 <span className="sr-only">Twitter</span>
-                {/* Twitter icon */}
+                <Twitter className="h-5 w-5" /> 
+                </a>
+
+             
               </div>
               <div className="h-10 w-10 rounded-full bg-muted flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors cursor-pointer">
+
+
+                <a href="https://www.linkedin.com/in/vishal-k-26-05-2001/" target="_blank" >
                 <span className="sr-only">LinkedIn</span>
-                {/* LinkedIn icon */}
+
+
+<Linkedin className="h-5 w-5" />
+        
+                </a>
+               
               </div>
               <div className="h-10 w-10 rounded-full bg-muted flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors cursor-pointer">
-                <span className="sr-only">GitHub</span>
-                {/* GitHub icon */}
-              </div>
+
+
+                  <a href="https://github.com/Vishal-K-988"  target="_blank">
+
+                  <span className="sr-only">GitHub</span>
+
+                  <Github className="h-5 w-5" />
+
+                  </a>
+
+              
+                </div>
             </div>
           </div>
         </motion.div>

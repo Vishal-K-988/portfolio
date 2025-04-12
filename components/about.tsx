@@ -27,12 +27,9 @@ export default function About() {
         className="text-xl text-muted-foreground max-w-2xl mt-8"
       >
         <p className="mb-4">
-          I'm a passionate developer focused on creating beautiful, functional, and user-friendly applications.
-        </p>
-        <p>
-          With expertise in modern web technologies, I build solutions that combine elegant design with robust
-          functionality.
-        </p>
+         Good for Nothing Developer ... ! 
+              </p>
+        
       </motion.div>
 
       <motion.div
@@ -42,7 +39,8 @@ export default function About() {
         className="flex flex-col sm:flex-row gap-4 pt-4 mt-8"
       >
         <a
-          href="#"
+          href="https://drive.google.com/file/d/1h8UqXvgayhgyNLuq6yEIf3m5G63IXGpJ/view?usp=sharing"
+            target="_blank"
           className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90"
         >
           Download Resume
